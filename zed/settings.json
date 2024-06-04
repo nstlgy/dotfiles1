@@ -1,0 +1,211 @@
+{
+  "features": {
+    "copilot": false
+  },
+  "assistant": {
+    "dock": "right",
+    "version": "1",
+    "provider": {
+      "name": "anthropic"
+    }
+  },
+  "auto_update": true,
+  "soft_wrap": "editor_width",
+  "confirm_quit": false,
+  "preferred_line_length": 80,
+  "ensure_final_newline_on_save": true,
+  "remove_trailing_whitespace_on_save": true,
+  "extend_comment_on_newline": false,
+  "theme": "Andromeda",
+  "ui_font_family": "Zed Mono",
+  "ui_font_size": 16,
+  "buffer_font_family": "ComicCode Nerd Font",
+  "buffer_font_size": 16,
+  "buffer_line_height": "comfortable",
+  "vim_mode": true,
+  "vim": {
+    "use_system_clipboard": "always",
+    "use_multiline_find": true
+  },
+  "cursor_blink": false,
+  "relative_line_numbers": true,
+  "gutter": {
+    "line_numbers": true
+  },
+  "scrollbar": {
+    "show": "never"
+  },
+  "vertical_scroll_margin": 0,
+  "bracket_pairing": "always",
+  "show_whitespaces": "selection",
+  "tab_size": 2,
+  "format_on_save": "on",
+  "formatter": "auto",
+  "hover_popover_enabled": true,
+  "show_completions_on_input": true,
+  "enable_language_server": true,
+  "preview_tabs": {
+    "enabled": false,
+    "enable_preview_from_file_finder": false
+  },
+  "use_autoclose": true,
+  "task": {
+    "show_status_indicator": false
+  },
+  "project_panel": {
+    "dock": "left",
+    "git_status": true
+  },
+  "file_types": {
+    "HTML": [
+      "ejs"
+    ],
+    "Javascript": [
+      "jsx"
+    ],
+    "TypeScript": [
+      "tsx"
+    ]
+  },
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+  "semantic_index": {
+    "enabled": true
+  },
+  "git": {
+    "enabled": true,
+    "autoFetch": true,
+    "autoFetchInterval": 300,
+    "autoFetchOnFocus": true,
+    "autoFetchOnWindowChange": true,
+    "autoFetchOnBuild": true,
+    "git_status": true,
+    "autoFetchOnBuildEvents": [
+      "build",
+      "run",
+      "debug"
+    ],
+    "autoFetchOnBuildEventsDelay": 1500,
+    "autoFetchOnBuildDelay": 1500,
+    "git_gutter": "tracked_files",
+    "inline_blame": {
+      "enabled": true, // Enable inline blame
+      "delay_ms": 600 // Show inline blame after 600ms delay
+    }
+  },
+  "prettier": {
+    "printWidth": 100,
+    "tabWidth": 2,
+    "useTabs": false,
+    "semi": true,
+    "singleQuote": true,
+    "quoteProps": "as-needed",
+    "jsxSingleQuote": false,
+    "trailingComma": "es5",
+    "bracketSpacing": true,
+    "jsxBracketSameLine": false,
+    "arrowParens": "always",
+    "requirePragma": false,
+    "insertPragma": false,
+    "proseWrap": "preserve",
+    "htmlWhitespaceSensitivity": "css",
+    "vueIndentScriptAndStyle": false,
+    "endOfLine": "lf",
+    "embeddedLanguageFormatting": "auto"
+  },
+  "linter": "eslint",
+  "eslint": {
+    "enabled": true,
+    "autoFixOnSave": true,
+    "autoFixOnFormat": true,
+    "autoFixOnFormatDelay": 500,
+    "lintOnChange": true,
+    "lintOnSave": true,
+    "lintOnType": true,
+    "lintOnFocus": true,
+    "ignorePath": ".eslintignore",
+    "configFile": ".eslintrc.js",
+    "extensions": [
+      ".js",
+      ".jsx",
+      ".ts",
+      ".tsx",
+      ".vue"
+    ]
+  },
+  "probe": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "html",
+    "vue",
+    "markdown",
+    "svelte"
+  ],
+  "validate": [
+    "javascript",
+    "typescript",
+    "javascriptreact",
+    "svelte"
+  ],
+  "language_overrides": {
+    "languages": {
+      "HTML": {
+        "formatter": "prettier"
+      },
+      "CSS": {
+        "formatter": "prettier"
+      },
+      "JavaScript": {
+        "code_actions_on_format": {
+          // "source.fixAll.eslint": true
+        }
+      },
+      "TypeScript": {
+        "code_actions_on_format": {
+          "source.organizeImports": true
+          // "source.fixAll.eslint": true
+        }
+      },
+      "TSX": {
+        "code_actions_on_format": {
+          "source.organizeImports": true
+          // "source.fixAll.eslint": true
+        }
+      }
+    }
+  },
+  "lsp": {
+    "typescript-language-server": {
+      "initialization_options": {
+        "preferences": {
+          "includeInlayParameterNameHints": "all",
+          "includeInlayParameterNameHintsWhenArgumentMatchesName": true,
+          "includeInlayFunctionParameterTypeHints": true,
+          "includeInlayVariableTypeHints": true,
+          "includeInlayVariableTypeHintsWhenTypeMatchesName": false,
+          "includeInlayPropertyDeclarationTypeHints": true,
+          "includeInlayFunctionLikeReturnTypeHints": true,
+          "includeInlayEnumMemberValueHints": true
+        }
+      }
+    }
+  },
+  "terminal": {
+    "alternate_scroll": "off",
+    "blinking": "terminal_controlled",
+    "copy_on_select": false,
+    "env": {},
+    "font_family": "ComicCode Nerd Font",
+    "font_features": null,
+    "font_size": 14,
+    "dock": "bottom",
+    "default_height": 320,
+    "option_as_meta": false,
+    "shell": "system",
+    "working_directory": "current_project_directory"
+  }
+}
